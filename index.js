@@ -6,6 +6,9 @@ try {
   const nameToGreet = core.getInput('my-input');
   console.log(`Hello ${nameToGreet}!`);
 
+  const other = core.getInput('my-other-input');
+  console.log(`Other ${other}`);
+
   console.log('environment:');
   console.log(JSON.stringify(process.env, null, 4));
 } catch (error) {

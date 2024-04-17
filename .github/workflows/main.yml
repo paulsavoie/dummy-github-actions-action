@@ -14,6 +14,7 @@ jobs:
         id: hello
         with:
           my-input: 'my world'
+          my-other-input: ${{ toJSON( "my-value" ) }}
         env:
           Mixed_case: "hello"
           UPPER_CASE: "hello"

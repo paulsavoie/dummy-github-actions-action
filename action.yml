@@ -3,6 +3,8 @@ description: 'dummy-action'
 inputs:
   my-input:  # id of input
     required: true
+  my-other-input:
+
 
 runs:
   using: 'node20'
