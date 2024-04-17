@@ -1,7 +1,7 @@
 on: [push, workflow_dispatch]
 
 env:
-  DAY_OF_WEEK: Monday
+  DAY_OF_WEEK: "Monday"
 
 jobs:
   hello_world_job:
@@ -18,6 +18,11 @@ jobs:
         with:
           my-input: 'my world'
           my-other-input: ${{ toJSON( env.DAY_OF_WEEK ) }}
+          params: |
+            {
+              "arg1": ${{ toJSON ( env.DAY_OF_WEEK ) }},
+              "arg2": "abc"
+            }
         env:
           Mixed_case: "hello"
           UPPER_CASE: "hello"

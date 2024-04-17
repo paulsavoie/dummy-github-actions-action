@@ -5,6 +5,8 @@ inputs:
     required: true
   my-other-input:
     required: false
+  params:
+    required: false
 
 
 runs:

@@ -9,6 +9,9 @@ try {
   const other = core.getInput('my-other-input');
   console.log(`Other ${other}`);
 
+  const p = core.getInput('params');
+  console.log(`Params: ${p}`);
+
   console.log('environment:');
   console.log(JSON.stringify(process.env, null, 4));
 } catch (error) {
