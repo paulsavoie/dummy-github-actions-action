@@ -1,0 +1,9 @@
+name: 'Hello World'
+description: 'dummy-action'
+inputs:
+  my-input:  # id of input
+    required: true
+
+runs:
+  using: 'node20'
+  main: 'index.js'
