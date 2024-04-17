@@ -15,9 +15,6 @@ jobs:
         with:
           my-input: 'my world'
         env:
-          My_env: "mixed case"
-          MY_ENV: "all uppercasde"
-          my_env: "all lowercase"
           Mixed_case: "hello"
           UPPER_CASE: "hello"
           lower_case: "hello"
