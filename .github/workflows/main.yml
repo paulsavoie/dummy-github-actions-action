@@ -1,5 +1,8 @@
 on: [push, workflow_dispatch]
 
+env:
+  DAY_OF_WEEK: Monday
+
 jobs:
   hello_world_job:
     runs-on: windows-latest
@@ -14,7 +17,7 @@ jobs:
         id: hello
         with:
           my-input: 'my world'
-          my-other-input: ${{ toJSON( "my-value" ) }}
+          my-other-input: ${{ toJSON( env.DAY_OF_WEEK ) }}
         env:
           Mixed_case: "hello"
           UPPER_CASE: "hello"
